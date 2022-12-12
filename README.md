@@ -1,0 +1,13 @@
+
+- Download PyTorch C++ library (I downloaded CPU version 1.13.0, GPU is 1.8 GB compacted)
+    - https://pytorch.org/get-started/locally/
+- Unzip
+    - ./workspace/libtorch
+- create build dir
+    - mkdir -p build # ./workspace/build
+- cd into build and run cmake
+    - cd build
+    - cmake ..
+- compile
+    - make # or
+    - cmake --build . --config Release
