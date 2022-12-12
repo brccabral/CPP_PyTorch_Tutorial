@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 project(torchtest)
 
-set(CMAKE_PREFIX_PATH libtorch)
+set(CMAKE_PREFIX_PATH /media/brccabral/Data/CPP_Projects/CPP_PyTorch_Tutorial/libtorch)
 
 find_package(Torch REQUIRED)
 
