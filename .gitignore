@@ -1,3 +1,5 @@
+libtorchCPU
+libtorchCUDA
 libtorch
 build
 .vscode
