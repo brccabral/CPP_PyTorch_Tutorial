@@ -4,10 +4,15 @@
 - Unzip
     - ./workspace/libtorch
 - create build dir
-    - mkdir -p build # ./workspace/build
+    - `mkdir -p build` # ./workspace/build
 - cd into build and run cmake
-    - cd build
-    - cmake ..
+    - `cd build`
+    - `cmake ..` # with two dots
 - compile
-    - make # or
-    - cmake --build . --config Release
+    - `make` # or
+    - `cmake --build . --config Release`
+- Create a python venv and activate
+- Install pytorch and numpy
+    - `pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu`
+    - `pip install numpy`
+- run models.py to create a model from python to be imported in C++

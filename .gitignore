@@ -3,3 +3,4 @@ libtorchCUDA
 libtorch
 build
 .vscode
+.venv
