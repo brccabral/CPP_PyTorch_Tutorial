@@ -4,3 +4,5 @@ libtorch
 build
 .vscode
 .venv
+opencv-4.x
+build_opencv
