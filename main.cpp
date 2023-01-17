@@ -43,6 +43,21 @@ int main(int argc, char *argv[])
     {
         std::cerr << "Error: MODEL DID NOT LOAD" << std::endl;
     }
+
+    for (;;)
+    {
+        cap.read(frame);
+        if (frame.empty())
+        {
+            std::cerr << "\nError: Blank Frame\n";
+        }
+
+        cv::imshow("video", frame);
+        if (cv::waitKey(1) >= 27)
+        {
+            break;
+        }
+    }
 }
 
 torch::jit::Module load_model(std::string model_name)
