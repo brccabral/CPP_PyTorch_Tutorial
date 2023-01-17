@@ -1,8 +1,7 @@
-libtorchCPU
-libtorchCUDA
 libtorch
 build
 .vscode
 .venv
 opencv-4.x
 build_opencv
+pytorch-vision-0.14.1
