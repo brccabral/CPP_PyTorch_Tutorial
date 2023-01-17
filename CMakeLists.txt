@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 project( DisplayImage )
 set(CMAKE_PREFIX_PATH /media/brccabral/Data/CPP_Projects/CPP_PyTorch_Tutorial/libtorch)
+set(CMAKE_PREFIX_PATH /media/brccabral/Data/CPP_Projects/CPP_PyTorch_Tutorial/build_opencv)
 set(CMAKE_INSTALL_PREFIX /usr/local)
 set(CMAKE_BUILD_TYPE Release)
 set(OPENCV_EXTRA_MODULES_PATH /media/brccabral/Data/CPP_Projects/CPP_PyTorch_Tutorial/build_opencv/modules)
