@@ -34,6 +34,9 @@ Tutorial from **Alan Tessier** [Getting Started with Pytorch C++](https://www.yo
     - https://github.com/alantess/vigilantV2/raw/main/get_models.sh
 - The `driving.mp4` video is in Lesson 2 of **Alan Tessier** repo
     - https://github.com/alantess/learntorch/tree/main/torchscript/L2/videos
+- The cats/dogs dataset are from Lesson 3 of **Alan Tessier** repo
+    - https://github.com/alantess/learntorch/tree/main/torchscript/L3/dataset
+    - this needs C++17
 - Download torchVision
     - https://github.com/pytorch/vision
     - build and install on your system. Can be in `$HOME/.local`. I couldn't use it just from the build folder
