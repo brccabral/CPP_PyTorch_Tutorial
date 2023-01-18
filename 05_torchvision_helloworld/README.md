@@ -24,6 +24,7 @@ pip install numpy
     - libtorch-cxx11-abi-shared-with-deps-1.13.0+cpu.zip  
     - do NOT download the "pre-cxx11 ABI"  
     - the CXX_FLAGS needs to have "-D_GLIBCXX_USE_CXX11_ABI=1", not 0  
+    - Unzip to this workspace (`./workspace/libtorch`), or somewhere in your path (`/usr/local` or `$HOME/.local`)
 - Download torchVision, I downloaded v0.14.1
     - https://github.com/pytorch/vision
     - build and install on your system. Can be in `$HOME/.local`. I couldn't use it just from the build folder

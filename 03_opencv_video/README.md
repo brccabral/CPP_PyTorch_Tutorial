@@ -7,7 +7,8 @@
     - libtorch-cxx11-abi-shared-with-deps-1.13.0+cpu.zip  
     - do NOT download the "pre-cxx11 ABI"  
     - the CXX_FLAGS needs to have "-D_GLIBCXX_USE_CXX11_ABI=1", not 0  
-- Download OpenCV and compile. Don't need to install, but you can  
+    - Unzip to this workspace (`./workspace/libtorch`), or somewhere in your path (`/usr/local` or `$HOME/.local`)
+- Download OpenCV and compile. Don't need to install on your system, but feel free to do it  
     - I downloaded 4.6.0  
     - I had to install some packages  
 
@@ -25,11 +26,24 @@
     # Create build directory
     mkdir -p build_opencv && cd build_opencv
     # Configure
-    cmake  ../opencv-4.x
+    cmake  -DCMAKE_INSTALL_PREFIX=$HOME/.local ../opencv-4.x
+    ```
+    - Compile will take some time
+    ```shell
     # Build
     cmake --build .
+    # or using make
+    make -j16
+    # install if needed
+    make install
+    # if installing at default location (/usr/local), need to use sudo
+    sudo make install
     ```
-- Download the video [driving.mp4](../videos/driving.mp4) and the model [quantized_lanesNet.pt](../models/quantized_lanesNet.pt)  
+- Download OpenCV model `quantized_lanesNet.pt` from **Alan Tessier** other project
+    - https://github.com/alantess/vigilantV2
+    - https://github.com/alantess/vigilantV2/raw/main/get_models.sh
+- The `driving.mp4` video is in Lesson 2 of **Alan Tessier** repo
+    - https://github.com/alantess/learntorch/tree/main/torchscript/L2/videos
 - Run `cmake` with the correct path to `libtorch` and `opencv`. Or set `CMAKE_PREFIX_PATH` in the CMakeLists.txt.
 
     ```shell
