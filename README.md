@@ -37,7 +37,7 @@ Tutorial from **Alan Tessier** [Getting Started with Pytorch C++](https://www.yo
 - The cats/dogs dataset are from Lesson 3 of **Alan Tessier** repo
     - https://github.com/alantess/learntorch/tree/main/torchscript/L3/dataset
     - this needs C++17
-- Download torchVision
+- Download torchVision, I downloaded v0.14.1
     - https://github.com/pytorch/vision
     - build and install on your system. Can be in `$HOME/.local`. I couldn't use it just from the build folder
     - to build, need to indicate `libtorch` location if it is not on your path
