@@ -2,8 +2,10 @@
 
 namespace
 {
-    constexpr int kTrainSize = 8007;
-    constexpr int kTestSize = 2027;
+    // constexpr int kTrainSize = 8007;
+    // constexpr int kTestSize = 2027;
+    constexpr int kTrainSize = 107;
+    constexpr int kTestSize = 103;
     constexpr int kRows = 300;
     constexpr int kCols = 300;
 
@@ -34,6 +36,8 @@ namespace
             int64_t label = 0;
             for (const auto &p : fs::directory_iterator(f))
             {
+                if (i >= num_samples)
+                    break;
                 if (p.path().extension() == ext)
                 {
                     cv::Mat img = cv::imread(p.path());
@@ -41,8 +45,6 @@ namespace
                     images[i] = img_tensor;
                     targets[i] = torch::tensor(label, torch::kInt64);
                 }
-                if (i >= num_samples)
-                    break;
                 i++;
             }
             label++;
