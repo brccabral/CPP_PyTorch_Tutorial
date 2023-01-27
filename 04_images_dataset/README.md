@@ -15,6 +15,8 @@
     ```shell
     apt install libgstreamer1.0-dev
     apt install libgstreamer-plugins-base1.0-dev
+    apt install libgtk-3-dev
+    apt install libgtk2.0-dev
     ```
     - https://docs.opencv.org/4.6.0/d7/d9f/tutorial_linux_install.html  
     ```shell
